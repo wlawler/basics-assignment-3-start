@@ -5,11 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ddbuttComponent} from './app-ddbutt/ddbutt.component';
+import { PpcomponentComponent } from './pp/ppcomponent/ppcomponent.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    ddbuttComponent 
+    ddbuttComponent, PpcomponentComponent 
   ],
   imports: [
     BrowserModule,
