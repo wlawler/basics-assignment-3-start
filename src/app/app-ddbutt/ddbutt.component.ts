@@ -1,4 +1,4 @@
-import { Component } from '@angular/core' ;
+import { Component, OnInit } from '@angular/core' ;
 
 @Component({
     selector: 'app-ddbutt',
@@ -7,6 +7,15 @@ import { Component } from '@angular/core' ;
 
 }) 
 
-export class ddbuttComponent {
+export class ddbuttComponent implements OnInit {
+    allowNewParagraph = false;
+     paragraphCreated = false; 
+
+     ngOnInit(){
+
+     }
+     onCreateParagraph() {
+         this.paragraphCreated = true;
+     }
 
 }
