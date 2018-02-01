@@ -2,7 +2,9 @@
 
 <button
 
-(click)="onCreateParagraph()">Display Details
+(click)="onCreateParagraph($event)" >Display Details
 </button>
 
 <p *ngIf="paragraphCreated">secret paragraph activated</p>
+<br>
+<p  #cat [ngStyle]="{backgroundColor: getColor()}">{{buttonclicks.length}}</p>
