@@ -7,4 +7,9 @@
 
 <p *ngIf="paragraphCreated">secret paragraph activated</p>
 <br>
-<p  #cat [ngStyle]="{backgroundColor: getColor()}">{{buttonclicks.length}}</p>
+<p 
+ #cat 
+[ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{blue: this.buttonclicks.length >= 5}">
+{{buttonclicks.length}}
+</p>

@@ -5,7 +5,11 @@ import { ViewChild } from '@angular/core';
 @Component({
     selector: 'app-ddbutt',
     templateUrl: './ddbutt.component.html', 
-
+    styles:[`
+    .blue {
+    color: red;
+    }`
+    ]
 
 }) 
 
